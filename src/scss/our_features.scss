@@ -50,6 +50,12 @@
     @media screen and (max-width: 780px){
       font-size: 14px;
     }
+    @media screen and (max-width: 420px){
+      font-size: 10px;
+      letter-spacing: normal;
+      line-height: 10px;
+    }
+
   }
   svg {
     height: 20px;
@@ -62,6 +68,10 @@
   color: $dark-blue;
   @media screen and (max-width: 780px){
     font-size: 12px;
+  }
+  @media screen and (max-width: 420px){
+    font-size: 10px;
+    letter-spacing: normal;
   }
 }
 .active_text {
