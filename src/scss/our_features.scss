@@ -11,6 +11,11 @@
   color: $dark-blue;
   padding-top: 65px;
   margin-bottom: 25px;
+  @media screen and (max-width: 780px){
+    font-size: 22px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
 }
 .our-features-text {
   margin: 0 auto 70px;
@@ -19,6 +24,10 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $gray;
+  @media screen and (max-width: 780px){
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 }
 .accordion {
   cursor: pointer;
@@ -32,11 +41,15 @@
   background-color: transparent;
   border: none;
   border-top: 1px solid #8B9FA6;
+
   p {
     font-size: 20px;
     line-height: 38px;
     letter-spacing: 0.03em;
     color: $dark-blue;
+    @media screen and (max-width: 780px){
+      font-size: 14px;
+    }
   }
   svg {
     height: 20px;
@@ -47,6 +60,9 @@
   overflow: hidden;
   padding: 10px;
   color: $dark-blue;
+  @media screen and (max-width: 780px){
+    font-size: 12px;
+  }
 }
 .active_text {
   display: block;

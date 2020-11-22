@@ -9,7 +9,9 @@
     letter-spacing: 0.03em;
     color: $gray;
     margin-bottom: 60px;
-
+    @media screen and (max-width: 780px){
+      margin-bottom: 10px;
+    }
   }
 }
 .our_features-title {
@@ -17,4 +19,35 @@
 }
 .our_partners-carousel {
   margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  //width: 25%;
+  //height: auto;
+  //width: 300px;
+  //height: 300px;
+  //border: 3px red solid;
+  //margin: 0 auto;
+  //position: relative;
+
+
+  @media screen and (max-width: 780px){
+    //margin-bottom: 10px;
+    //flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+}
+
+.carousel-item {
+  //width: 300px;
+  //height: 300px;
+  //position: absolute;
+  transition: 1s all ease;
+  //left: 0;
+  //top: 0;
 }
