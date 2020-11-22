@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 3em 0 1em;
+  margin: 3em 0 2em;
   .logo {
     flex: 1;
     margin-left: 30px;
@@ -56,42 +56,27 @@
 }
 
 .map {
-  //position: absolute;
-  //margin: 0 auto;
   width: 80%;
-  //flex: 1;
-  //width: 50%;
-  background: url('../img/map.png') no-repeat 100% 100%;
-  height: auto;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px;
   display: flex;
+  position: relative;
+  img{
+    flex: 1;
+    position: absolute;
+    right: -33%;
+    width: 67%;
+    top: -7%;
+  }
 }
 .header-text {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 60px 80px 60px 0;
-}
-
-.image {
-  //flex: 1;
-  width: 50%;
-
-
-  img {
-    display: block;
-
-
-    &:first-child {
-      position: absolute;
-      z-index: 22;
-    }
-    &:last-child {
-      position: relative;
-      //transform: rotate(-21deg);
-      top: -10px;
-      left: 10px;
-    }
-  }
 }
 
 .ht-title {
@@ -106,6 +91,7 @@
   line-height: 26px;
   letter-spacing: 0.03em;
   color: $gray;
+  width: 50%;
 }
 .ht-link {
   line-height: 26px;
@@ -116,3 +102,6 @@
     color: $dark-blue;
   }
 }
+
+
+
