@@ -1,0 +1,52 @@
+@import 'vars';
+
+.functionality {
+  background: linear-gradient(to top, $white , #FBFDFE);
+}
+
+.functionality-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.functionality-block_item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  //margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 100px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.fb_item-img {
+  height: 160px;
+  width: 160px;
+  margin-bottom: 20px;
+}
+.fb_item-text {
+  font-family: $sunflower;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #305F6D;
+}
+
+.functionality-title {
+  font-size: 28px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $gray;
+  padding-top: 60px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,56 @@
+@import 'vars';
+.our_features {
+  background-color: $blue-background;
+}
+.our_features-title {
+  font-family: $sunflower;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  color: $dark-blue;
+  padding-top: 65px;
+  margin-bottom: 25px;
+}
+.our-features-text {
+  margin: 0 auto 70px;
+  width: 70%;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $gray;
+}
+.accordion {
+  cursor: pointer;
+  width: 100%;
+  outline: none;
+  transition: 0.4s;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid #8B9FA6;
+  p {
+    font-size: 20px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    color: $dark-blue;
+  }
+  svg {
+    height: 20px;
+    width: 20px;
+  }
+}
+.accordion_text {
+  overflow: hidden;
+  padding: 10px;
+  color: $dark-blue;
+}
+.active_text {
+  display: block;
+}
+.hide_text {
+  display: none;
+}

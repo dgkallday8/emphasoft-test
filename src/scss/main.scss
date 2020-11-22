@@ -7,15 +7,18 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
-  max-width: 1740px;
-  font-size: 16px;
+  max-width: 1600px;
+  font-size: $main-fz;
+  font-family: $roboto;
+  margin: 0 auto;
 }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -27,19 +30,12 @@ body {
 
 
 
-h1  {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: green;
-}
-h2  {
-  font-family: 'Sunflower', sans-serif;
-  font-weight: 500;
-}
-h3  {
-  font-family: 'Sunflower', sans-serif;
-  font-weight: 700;
-}
+
 
 
 @import 'header';
+@import 'functionality';
+@import 'questionary';
+@import 'our_partners';
+@import 'our_features';
+@import 'footer';
