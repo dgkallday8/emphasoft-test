@@ -10,13 +10,15 @@ const htmlmin = require('gulp-htmlmin')
 const del = require('del')
 const uglify = require('gulp-uglify-es').default
 const browserSync = require('browser-sync').create()
+const imagemin = require('gulp-imagemin');
+
 
 const config = {
     src: {
         html: './src/**/*.html',
         style: './src/scss/**/*.scss',
         js: './src/js/**/*.js',
-        img: './src/img/**/*.+(svg|png)'
+        img: './src/img/**/*.+(svg|png|jpg)'
     },
     docs: {
         html: './docs/',
@@ -58,8 +60,9 @@ gulp.task('js', function () {
         .pipe(gulp.dest(config.docs.js))
         .pipe(browserSync.stream())
 })
-gulp.task('transfer', function () {
+gulp.task('image', function () {
     return gulp.src(config.src.img)
+        .pipe(imagemin())
         .pipe(gulp.dest(config.docs.img))
 })
 
@@ -71,7 +74,7 @@ gulp.task('serve', function () {
     })
     watch(config.src.style, gulp.parallel('scss'))
     watch(config.src.js, gulp.parallel('js'))
-    watch(config.src.img, gulp.parallel('transfer'))
+    watch(config.src.img, gulp.parallel('image'))
     watch(config.src.html, gulp.series('html', browserSync.reload))
 })
 gulp.task('del', function () {
@@ -81,6 +84,6 @@ gulp.task('del', function () {
 
 gulp.task('default', gulp.series(
     'del',
-    gulp.parallel('scss', 'html', 'js', 'transfer'),
+    gulp.parallel('scss', 'html', 'js', 'image'),
     gulp.parallel('serve')
 ))

@@ -23,7 +23,7 @@
     }
     a {
       img {
-        display: block;
+        display: inline-block;
         width: 191px;
         height: 45px;
       }
@@ -49,6 +49,7 @@
       }
       @media screen and (max-width: 420px){
         flex-direction: column;
+        display: none;
       }
       li {
         a {
@@ -67,6 +68,19 @@
       margin-right: 0;
       flex: 2;
     }
+  }
+}
+.hide {
+  display: none;
+
+}
+i.burger {
+  display: none;
+  @media screen and (max-width: 420px){
+    display: inline-block;
+    margin-left: 20px;
+    color: $dark-blue;
+    cursor: pointer;
   }
 }
 
