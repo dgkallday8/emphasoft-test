@@ -12,6 +12,10 @@
   &:hover {
     fill: lighten($social-icons, 30%);
   }
+  @media screen and (max-width: 780px){
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .footer-block {
@@ -21,5 +25,8 @@
   height: 6em;
   ul {
     display: flex;
+  }
+  @media screen and (max-width: 780px){
+    height: 3em;
   }
 }

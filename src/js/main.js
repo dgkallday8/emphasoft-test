@@ -63,7 +63,11 @@ const interval = setInterval(nextSlide, 3000)
 
 
 
-
+let hTwo = document.querySelectorAll('h2')
+hTwo.forEach(el => {
+    el.classList.add('animate__animated')
+    el.classList.add('animate__zoomIn')
+})
 
 
 
