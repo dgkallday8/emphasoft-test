@@ -41,21 +41,17 @@
   background-color: transparent;
   border: none;
   border-top: 1px solid #8B9FA6;
-
-  p {
-    font-size: 20px;
-    line-height: 38px;
-    letter-spacing: 0.03em;
-    color: $dark-blue;
-    @media screen and (max-width: 780px){
-      font-size: 14px;
-    }
-    @media screen and (max-width: 420px){
-      font-size: 10px;
-      letter-spacing: normal;
-      line-height: 10px;
-    }
-
+  font-size: 20px;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+  color: $dark-blue;
+  @media screen and (max-width: 780px){
+    font-size: 14px;
+  }
+  @media screen and (max-width: 420px){
+    font-size: 10px;
+    letter-spacing: normal;
+    line-height: 10px;
   }
   svg {
     height: 20px;
